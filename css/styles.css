@@ -1,3 +1,24 @@
+html {
+    font-family: sans-serif;
+}
+body {
+    background: #cab5a3 url(../images/bg-main.gif) repeat repeat 0 0;
+}
+header {
+    box-shadow: rgba(0, 0, 0, .25) 0 2px 3px 0;
+    position: relative;
+    z-index: 9;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+h2 {
+    display: block;
+    font-size: 1.5em;
+}
+
 .cf:before,
 .cf:after {
     content: " ";
@@ -55,19 +76,27 @@ cf{
        position: absolute;
        bottom: 93px;
        right: 75px;
+       width: 316px;
+   }
+   .promo-btn{
+    display: inline-block;
+    width: 208px;
+    padding: 13px 0;
+    background-color: #6c0733;
+    box-shadow: rgba(0, 0, 0, .25) 0 7px 2px 0;
    }
 
 .main {
     width: 1020px;
     margin: 0 auto;
-    outline: solid 1px red;
-    background:green;
+    
 }
 
 .latest {
     width: 640px;
     float: left;
-    padding: 0 40px;   
+    padding: 0 40px; 
+    background: url(../images/bg-column.png) no-repeat top right;  
 } /* Блок свежие рецепты */
 
 .media {
@@ -78,6 +107,8 @@ cf{
 .media img {
     float: left;
     margin-right: 30px;
+    border: solid 9px #ede0d5;
+    box-shadow: rgba(0, 0, 0, .25) 2px 2px 2px 0;
 }
 .sidebar {
     width: 360px;
@@ -113,6 +144,9 @@ width: 250px;
     position: absolute;
     left: 15px;
     top: 4px;
+}
+footer {
+    background-color: rgb(66, 3, 30);
 }
 .footer-inside {
     padding-left: 40px;
