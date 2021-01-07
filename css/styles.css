@@ -4,8 +4,8 @@
     box-sizing: border-box;
 }
 
-.cf::before,
-cf::after {
+.cf:before,
+.cf:after {
     content: " ";
     display: table;
 
@@ -21,11 +21,11 @@ cf::after {
 }
 
 html {
-    font-family: serif;
+    font-family: sans-serif;
 }
 
 body {
-    background: #cab5a3 url(../images/bg-main.gif) repeat repeat 0 0;
+    background: #cab5a3 url(../images/bg-main.gif)  repeat;
 
 }
 
@@ -37,7 +37,9 @@ a:visited {}
 
 a:hover {}
 
-h1 {}
+h1 {
+   /* text-shadow: rgba(0, 0, 0, .25) 5px 5px 4px;*//*с тенью прикольней*/
+}
 
 h2 {}
 
@@ -46,7 +48,11 @@ h2 {}
     margin: 0 auto;
 }
 
-body>header {}
+body>header {
+    box-shadow: rgba(0, 0, 0, .25) 0 3px 2px 0;
+    position: relative;
+    z-index: 9;
+}
 
 .logo {
     float: left;
@@ -54,8 +60,7 @@ body>header {}
     margin-top: -34px;
     position: relative;
     top: 34px;
-    z-index: 10;
-}
+   }
 
 nav {
     float: right;
@@ -79,20 +84,40 @@ nav ul li {
 .promo {
     position: relative;
     z-index: 5;
+    padding-bottom: 8px;
+    box-shadow: rgba(0, 0, 0, .25) 0 3px 2px 0;
 }
 
 .promo-desc {
     position: absolute;
     bottom: 93px;
     right: 75px;
+    width: 316px;
+}
+.promo-btn {
+    display: inline-block;
+    width: 208px;
+    padding: 13px 0;
+    background-color: #6c0733;
+    box-shadow: 0 7px 2px 0 rgba(0, 0, 0, .25);
 }
 
-.main {}
+.main {
+    width: 1020px;
+    margin: 0 auto;
+}
 
 .latest {
     width: 640px;
     float: left;
     padding: 0 40px;
+    background: url(../images/bg-column.png) no-repeat top right;
+}
+.more-btn {
+    text-align: center;
+    float: right;
+    margin-right: 50px;
+    width: 280px;
 }
 
 .media {
@@ -104,6 +129,8 @@ nav ul li {
 .media img {
     float: left;
     margin-right: 30px;
+    border: solid 9px #ede0d5;
+    box-shadow: rgba(0, 0, 0, .25) 2px 2px 2px 0;
 }
 
 .sidebar {
@@ -143,10 +170,13 @@ nav ul li {
     top: 4px;
 }
 
-footer {}
+footer {
+    background-color: rgb(66, 3, 30);
+}
 
 .footer-inside {
     padding-left: 40px;
+   
 }
 
 .footer-1 {
