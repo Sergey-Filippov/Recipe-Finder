@@ -24,21 +24,34 @@ html {
     font-family: sans-serif;
 }
 
-body {
-    background: #cab5a3 url(../images/bg-main.gif)  repeat;
+@font-face {
+    font-family: "PT Sans Caption";
+    scr: url (../fonts/pt_sans-caption-web-bold-webfont.eot) ,
+        url ((../fonts/pt_sans-caption-web-bold-webfont.woff) ,
+        url ((../fonts/pt_sans-caption-web-bold-webfont.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
 
+body {
+    background: #cab5a3 url(../images/bg-main.gif) repeat;
+    color: #333333;
+    font-family: PT Sans Caption, Arial, Helvetica, sans-serif;
 }
 
 header {}
 
 
-a:link,
-a:visited {}
+a {
+    text-decoration: none;
+    color: #544a40;
+}
 
 a:hover {}
 
 h1 {
-   /* text-shadow: rgba(0, 0, 0, .25) 5px 5px 4px;*//*с тенью прикольней*/
+    /* text-shadow: rgba(0, 0, 0, .25) 5px 5px 4px;*/
+    /*с тенью прикольней*/
 }
 
 h2 {}
@@ -60,7 +73,7 @@ body>header {
     margin-top: -34px;
     position: relative;
     top: 34px;
-   }
+}
 
 nav {
     float: right;
@@ -81,6 +94,10 @@ nav ul li {
     margin-right: 30px;
 }
 
+nav a {
+    color: #fefefe;
+}
+
 .promo {
     position: relative;
     z-index: 5;
@@ -94,6 +111,7 @@ nav ul li {
     right: 75px;
     width: 316px;
 }
+
 .promo-btn {
     display: inline-block;
     width: 208px;
@@ -113,6 +131,7 @@ nav ul li {
     padding: 0 40px;
     background: url(../images/bg-column.png) no-repeat top right;
 }
+
 .more-btn {
     text-align: center;
     float: right;
@@ -170,13 +189,22 @@ nav ul li {
     top: 4px;
 }
 
+.tweet a {
+    color: #810430;
+}
+
+.tweet .date {
+    color: #8f7e6d;
+}
+
+
 footer {
     background-color: rgb(66, 3, 30);
 }
 
 .footer-inside {
     padding-left: 40px;
-   
+
 }
 
 .footer-1 {
