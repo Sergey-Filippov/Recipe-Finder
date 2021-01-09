@@ -2,28 +2,30 @@
     font-family: 'PTSansCap';
     src: url('../fonts/pt_sans-caption-web-regular-webfont.eot');
     src: url('../fonts/pt_sans-caption-web-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/pt_sans-caption-web-regular-webfont.woff') format('woff'),
-         url('../fonts/pt_sans-caption-web-regular-webfont.ttf') format('truetype');
+        url('../fonts/pt_sans-caption-web-regular-webfont.woff') format('woff'),
+        url('../fonts/pt_sans-caption-web-regular-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 
 }
+
 @font-face {
     font-family: 'PTSansCapBold';
     src: url('../fonts/pt_sans-caption-web-bold-webfont.eot');
     src: url('../fonts/pt_sans-caption-web-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/pt_sans-caption-web-bold-webfont.woff') format('woff'),
-         url('../fonts/pt_sans-caption-web-bold-webfont.ttf') format('truetype');
+        url('../fonts/pt_sans-caption-web-bold-webfont.woff') format('woff'),
+        url('../fonts/pt_sans-caption-web-bold-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 
 }
+
 @font-face {
     font-family: 'UnderDog';
     src: url('../fonts/underdog-regular-webfont.eot');
     src: url('../fonts/underdog-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/underdog-regular-webfont.woff') format('woff'),
-         url('../fonts/underdog-regular-webfont.ttf') format('truetype');
+        url('../fonts/underdog-regular-webfont.woff') format('woff'),
+        url('../fonts/underdog-regular-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 
@@ -58,7 +60,9 @@ body {
     font-family: PTSansCap, Arial, Helvetica, sans-serif;
 }
 
-h1, h2, nav {
+h1,
+h2,
+nav {
     font-family: UnderDog, Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     font-weight: bold;
@@ -118,12 +122,24 @@ nav ul li {
     margin-right: 30px;
     font-size: 20px;
 }
+
 nav ul li:last-child {
     margin-right: 0;
 }
 
 nav a {
     color: #fefefe;
+    transition: color .4s ease-out;
+    -webkit-transform: color .4s ease-out;
+    -moz-transform:  color .4s ease-out;
+    -o-transform:  color .4s ease-out;
+    -ms-transform:  color .4s ease-out;
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: #cdb8a5;
+
 }
 
 .promo {
@@ -140,6 +156,7 @@ nav a {
     width: 316px;
     text-align: center;
 }
+
 .promo-desc h1 {
     color: #fefefe;
 }
@@ -151,10 +168,15 @@ nav a {
     background-color: #6c0733;
     box-shadow: 0 7px 2px 0 rgba(0, 0, 0, .25);
     font-style: 20px;
-    color:#fefefe;    
+    color: #fefefe;
 
 }
-.main{
+
+.promo-btn:hover {
+    text-decoration: none;
+}
+
+.main {
     padding-bottom: 33px;
 }
 
@@ -178,13 +200,14 @@ nav a {
     padding-bottom: 28px;
     overflow: hidden;
 }
+
 .madia h2 {
     color: #49301a;
-    font-family: PTSansCapBold, Arial, Helvetica, sans-serif ;
+    font-family: PTSansCapBold, Arial, Helvetica, sans-serif;
     font-weight: normal;
     font-style: 24px;
     margin-bottom: 5px;
-} 
+}
 
 .media img {
     float: left;
@@ -192,6 +215,7 @@ nav a {
     border: solid 9px #ede0d5;
     box-shadow: rgba(0, 0, 0, .25) 2px 2px 2px 0;
 }
+
 .media p {
     margin: 0;
     font-family: PTSansCap, Arial, Helvetica, sans-serif;
@@ -199,8 +223,24 @@ nav a {
     color: #7b6047;
     text-transform: uppercase;
 }
+
 .media span {
     font-size: 25px;
+}
+
+.media a {
+    text-decoration: none;
+
+}
+
+.media a h2,
+.media a p {
+    transition: color .3s linear;
+}
+
+.media a:hover h2,
+.media a:hover p {
+    color: #b32c1c;
 }
 
 .sidebar {
@@ -229,8 +269,9 @@ nav a {
     font-size: 18px;
     text-transform: uppercase;
 }
+
 .pop-item a {
-    color:#544a40;
+    color: #544a40;
 }
 
 .tweet {
@@ -275,16 +316,19 @@ footer {
     float: left;
     width: 460px;
 }
+
 .footer-1 h2 {
     font-size: 36px;
 }
+
 .footer-1 ul,
 .footer-2 ul {
     text-align: center;
     font-size: 20px;
     line-height: 1.7;
 }
-.footer-1 li{
+
+.footer-1 li {
     float: left;
     width: 240px;
 }
@@ -298,6 +342,7 @@ footer {
     float: left;
     width: 232px;
 }
+
 footer ul {
     list-style: none;
     margin: 0;
