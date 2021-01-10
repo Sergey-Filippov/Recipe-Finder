@@ -30,6 +30,13 @@
     font-style: normal;
 
 }
+@keyframes logomove {
+    0% {
+        transform: translateX(-800%) rotate(0) scale(0.1, 0.1);
+    }
+    100% {transform: translateX(0) rotate(-720deg) scale(1, 1);
+    }
+}
 
 
 * {
@@ -57,13 +64,13 @@
 body {
     background: #cab5a3 url(../images/bg-main.gif) repeat;
     color: #333333;
-    font-family: PTSansCap, Arial, Helvetica, sans-serif;
+    font-family: 'PTSansCap', Arial, Helvetica, sans-serif;
 }
 
 h1,
 h2,
 nav {
-    font-family: UnderDog, Arial, Helvetica, sans-serif;
+    font-family: 'UnderDog', Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     font-weight: bold;
     color: #810430;
@@ -75,14 +82,12 @@ a {
     color: #544a40;
 }
 
-a:hover {}
 
-h1 {
-    /* text-shadow: rgba(0, 0, 0, .25) 5px 5px 4px;*/
-    /*с тенью прикольней*/
-}
 
-h2 {}
+/*h1, h2 {
+    text-shadow: rgba(0, 0, 0, .25) 5px 5px 4px;
+    с тенью прикольней
+}*/
 
 .center-global {
     width: 1020px;
@@ -93,6 +98,7 @@ body>header {
     box-shadow: rgba(0, 0, 0, .25) 0 3px 2px 0;
     position: relative;
     z-index: 9;
+    background-image: linear-gradient(#87053e, #560329);
 }
 
 .logo {
@@ -101,6 +107,8 @@ body>header {
     margin-top: -34px;
     position: relative;
     top: 34px;
+    transform: translateX(-800%) scale(1, 1);
+    animation: logomove 2s ease-out 1s 1 normal forwards;
 }
 
 nav {
@@ -130,10 +138,7 @@ nav ul li:last-child {
 nav a {
     color: #fefefe;
     transition: color .4s ease-out;
-    -webkit-transform: color .4s ease-out;
-    -moz-transform:  color .4s ease-out;
-    -o-transform:  color .4s ease-out;
-    -ms-transform:  color .4s ease-out;
+  
 }
 
 nav a:hover {
@@ -147,6 +152,7 @@ nav a:hover {
     z-index: 5;
     padding-bottom: 8px;
     box-shadow: rgba(0, 0, 0, .25) 0 3px 2px 0;
+    background-image: linear-gradient(#4e0324 97%, #851f49);
 }
 
 .promo-desc {
@@ -166,15 +172,19 @@ nav a:hover {
     width: 208px;
     padding: 13px 0;
     background-color: #6c0733;
+    background-image: linear-gradient(#87053e, #560329);
     box-shadow: 0 7px 2px 0 rgba(0, 0, 0, .25);
     font-style: 20px;
     color: #fefefe;
+    transition: transform .5s ease-out;
 
 }
 
 .promo-btn:hover {
     text-decoration: none;
+    transform:scale(1.05);
 }
+
 
 .main {
     padding-bottom: 33px;
@@ -193,6 +203,8 @@ nav a:hover {
     float: right;
     margin-right: 50px;
     width: 280px;
+    background-color: #2d1e10;
+    background-image: linear-gradient(#6b5139, #2d1e10);
 }
 
 .media {
@@ -287,6 +299,10 @@ nav a:hover {
     position: absolute;
     left: 15px;
     top: 4px;
+    transition: transform .5s linear;
+}
+.tweet:hover:before {
+    transform: rotate(360deg);
 }
 
 .tweet a {
