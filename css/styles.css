@@ -5,7 +5,7 @@
     font-weight: normal;
     font-style: normal;
 
-}
+}/* Подключаем шрифт 'UnderDog' */
 
 
 
@@ -17,7 +17,7 @@
     font-weight: normal;
     font-style: normal;
 
-}
+} /* Подключаем шрифт 'PTSansCapBold' */
 
 
 
@@ -29,7 +29,7 @@
     font-weight: normal;
     font-style: normal;
 
-}
+} /* Подключаем шрифт 'PTSansCap' */
 
 .cf:before,
 .cf:after {
@@ -50,7 +50,7 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-}
+} /*  обнуление */
 
 body {
     background: #cab5a3 url(../images/bg-main.gif) repeat repeat 0 0;
@@ -103,14 +103,14 @@ body>header {
 @keyframes logomove {
 
     0% {
-        transform: translateX(-800%) rotate(0);
+        transform: translateX(-800%) rotate(0) scale(0.05, 0.05);
     }
 
     100% {
-        transform: translateX(0) rotate(-720deg);
+        transform: translateX(0) rotate(-1080deg) scale(1, 1);
     }
 
-}
+} /*  Анимация логотипа вылетает слева трираза крутиться и увеличивается*/
 
 nav {
     float: right;
@@ -120,9 +120,6 @@ nav {
 
 nav a {
     color: #fefefe;
-    -webkit-transition: color .4s ease-out;
-    -moz-transition: color .4s ease-out;
-    -o-transition: color .4s ease-out;
     transition: color .4s ease-out;
 }
 
@@ -139,7 +136,6 @@ nav ul {
 
 nav ul li {
     display: inline-block;
-    *display: inline;  /* for IE7 */
     margin-right: 30px;
     font-size: 20px;
 }
@@ -183,17 +179,11 @@ nav ul li:last-child {
     box-shadow: rgba(0, 0, 0, .25) 0 7px 2px 0;
     font-size: 20px;
     color: #fefefe;
-    -webkit-transition: -webkit-transform .5s ease-out;
-    -moz-transition: -moz-transform .5s ease-out;
-    -o-transition: o-transform .5s ease-out;
     transition: transform .5s ease-out;
 }
 
 .promo-btn:hover {
     text-decoration: none;
-    -webkit-transform: scale(1.05);
-    -moz-transform: scale(1.05);
-    -o-transform: scale(1.05);
     transform: scale(1.05);
 }
 
@@ -220,9 +210,6 @@ nav ul li:last-child {
 
 .media a h2,
 .media a p {
-    -webkit-transition: color .3s linear;
-    -moz-transition: color .3s linear;
-    -o-transition: color .3s linear;
     transition: color .3s linear;
 }
 
@@ -314,16 +301,10 @@ nav ul li:last-child {
     position: absolute;
     left: 4.167%; /* 15 / 1020 */
     top: 4px;
-    -webkit-transition: -webkit-transform .5s linear;
-    -moz-transition: -moz-transform .5s linear;
-    -o-transition: o-transform .5s linear;
-    transition: transform .5s linear;
+    transition: transform .3s linear;
 }
 
 .tweet:hover:before {
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
     transform: rotate(360deg);
 }
 
@@ -417,17 +398,9 @@ footer ul {
     .logo {
         float: none;
         margin: 0;
-        -webkit-transform: translateX(0);
-        -moz-transform: translateX(0);
-        -o-transform: translateX(0);
-        -ms-transform: translateX(0);
         transform: translateX(0);
-        -webkit-animation: none;
-        -moz-animation: none;
-        -ms-animation: none;
-        -o-animation: none;
         animation: none;
-    }
+    } /*  убираем анимацию при экране меньше 930п  */
 
     nav {
         float: none;
@@ -493,7 +466,7 @@ footer ul {
         font-size: 26px;
     }
 
-}
+} /*  Убираем флоаты и центрируем  */
 
 @media (max-width: 730px) {
 
